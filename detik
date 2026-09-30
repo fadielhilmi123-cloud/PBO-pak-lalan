@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Waktu {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int jam, menit, detik, totDet;
+
+        System.out.print("Masukkan jam: ");
+        jam = input.nextInt();
+
+        System.out.print("Masukkan menit: ");
+        menit = input.nextInt();
+
+        System.out.print("Masukkan detik: ");
+        detik = input.nextInt();
+
+        totDet = jam * 3600 + menit * 60 + detik;
+
+        System.out.println("Total detik = " + totDet);
+
+        input.close();
+    }
+}
